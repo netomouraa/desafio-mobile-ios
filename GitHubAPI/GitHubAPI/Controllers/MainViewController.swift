@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import ObjectMapper
+import CoreData
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -87,6 +88,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableViewMain.deselectRow(at: indexPath, animated: true)
+
         let repositorie = self.ArrayRepositories[indexPath.row]
 
         let vc = DetailTableViewController(nibName: "DetailTableViewController", bundle: nil)

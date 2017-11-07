@@ -27,14 +27,7 @@ class DetailTableViewController: UITableViewController {
         
         tableView.estimatedRowHeight = 25
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        let view1: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 50));
-        let label: UILabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 20))
-        label.textAlignment = .center
-        label.text = "\(repositorie!.open_issues_count!) opened /  closed "
-        view1.addSubview(label);
-        self.tableView.tableHeaderView = view1;
-        
+    
         request()
     }
 
@@ -85,8 +78,6 @@ class DetailTableViewController: UITableViewController {
                 if let image = response.result.value {
                     cell.imageViewUser.maskCircle(inputImage: image)
                     self.cache.setObject(image, forKey: repo.user!.id as AnyObject)
-                    
-                    //                cell.imageViewUser.image = image
                 }
             }
         }
@@ -117,12 +108,21 @@ class DetailTableViewController: UITableViewController {
             let SafariVC = SFSafariViewController(url: URL(string: repo.url!)!)
             self.present(SafariVC, animated: true, completion: nil)
         } else {
+            let mywebViewController = UIViewController()
             let webView: UIWebView = UIWebView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-//            let webV:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
-            let url = URL(string: repo.url!);
-            let request = URLRequest(url: url!);
-            webView.loadRequest(request);
+            let url = URL(string: repo.url!)
+            let request = URLRequest(url: url!)
+            webView.loadRequest(request)
+            mywebViewController.view = webView
+
+            let navController = UINavigationController(rootViewController: mywebViewController)
+            mywebViewController.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissWebView))
+            self.navigationController!.present(navController, animated: true, completion: nil)
         }
+    }
+    
+    @objc func dismissWebView(sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
 
 }
