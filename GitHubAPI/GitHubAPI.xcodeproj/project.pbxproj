@@ -16,8 +16,13 @@
 		977C081E1FB09208003511F7 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977C081D1FB09208003511F7 /* Repositories.swift */; };
 		977C08201FB092E7003511F7 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977C081F1FB092E7003511F7 /* PullRequest.swift */; };
 		977C08221FB09FA8003511F7 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977C08211FB09FA8003511F7 /* MainTableViewCell.swift */; };
+		979405A81FB0D9F900811F37 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979405A61FB0D9F900811F37 /* DetailTableViewController.swift */; };
+		979405A91FB0D9F900811F37 /* DetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979405A71FB0D9F900811F37 /* DetailTableViewController.xib */; };
+		979405AE1FB0DA6000811F37 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979405AC1FB0DA6000811F37 /* DetailTableViewCell.swift */; };
+		979405AF1FB0DA6000811F37 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979405AD1FB0DA6000811F37 /* DetailTableViewCell.xib */; };
+		979405B11FB10E1500811F37 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979405B01FB10E1500811F37 /* Extensions.swift */; };
 		97A7B8761FB084B1000C6069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B8751FB084B1000C6069 /* AppDelegate.swift */; };
-		97A7B8781FB084B1000C6069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B8771FB084B1000C6069 /* ViewController.swift */; };
+		97A7B8781FB084B1000C6069 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B8771FB084B1000C6069 /* MainViewController.swift */; };
 		97A7B87B1FB084B1000C6069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B8791FB084B1000C6069 /* Main.storyboard */; };
 		97A7B87D1FB084B1000C6069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B87C1FB084B1000C6069 /* Assets.xcassets */; };
 		97A7B8801FB084B1000C6069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B87E1FB084B1000C6069 /* LaunchScreen.storyboard */; };
@@ -55,9 +60,14 @@
 		977C081D1FB09208003511F7 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		977C081F1FB092E7003511F7 /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
 		977C08211FB09FA8003511F7 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		979405A61FB0D9F900811F37 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		979405A71FB0D9F900811F37 /* DetailTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewController.xib; sourceTree = "<group>"; };
+		979405AC1FB0DA6000811F37 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		979405AD1FB0DA6000811F37 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		979405B01FB10E1500811F37 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		97A7B8721FB084B1000C6069 /* GitHubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A7B8751FB084B1000C6069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97A7B8771FB084B1000C6069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97A7B8771FB084B1000C6069 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		97A7B87A1FB084B1000C6069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97A7B87C1FB084B1000C6069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A7B87F1FB084B1000C6069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,8 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				97A7B8751FB084B1000C6069 /* AppDelegate.swift */,
-				97A7B8771FB084B1000C6069 /* ViewController.swift */,
+				97A7B8771FB084B1000C6069 /* MainViewController.swift */,
 				977C08211FB09FA8003511F7 /* MainTableViewCell.swift */,
+				979405A61FB0D9F900811F37 /* DetailTableViewController.swift */,
+				979405B01FB10E1500811F37 /* Extensions.swift */,
+				979405AC1FB0DA6000811F37 /* DetailTableViewCell.swift */,
+				979405AD1FB0DA6000811F37 /* DetailTableViewCell.xib */,
+				979405A71FB0D9F900811F37 /* DetailTableViewController.xib */,
 				977C08191FB09175003511F7 /* Repositorie.swift */,
 				977C081F1FB092E7003511F7 /* PullRequest.swift */,
 				977C081B1FB09192003511F7 /* RepositorieOwner.swift */,
@@ -299,6 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979405A91FB0D9F900811F37 /* DetailTableViewController.xib in Resources */,
+				979405AF1FB0DA6000811F37 /* DetailTableViewCell.xib in Resources */,
 				97A7B8801FB084B1000C6069 /* LaunchScreen.storyboard in Resources */,
 				97A7B87D1FB084B1000C6069 /* Assets.xcassets in Resources */,
 				97A7B87B1FB084B1000C6069 /* Main.storyboard in Resources */,
@@ -465,12 +482,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				977C081C1FB09192003511F7 /* RepositorieOwner.swift in Sources */,
-				97A7B8781FB084B1000C6069 /* ViewController.swift in Sources */,
+				97A7B8781FB084B1000C6069 /* MainViewController.swift in Sources */,
 				977C08221FB09FA8003511F7 /* MainTableViewCell.swift in Sources */,
+				979405A81FB0D9F900811F37 /* DetailTableViewController.swift in Sources */,
 				977C08201FB092E7003511F7 /* PullRequest.swift in Sources */,
 				977C081A1FB09175003511F7 /* Repositorie.swift in Sources */,
 				97A7B8761FB084B1000C6069 /* AppDelegate.swift in Sources */,
 				977C08181FB088A2003511F7 /* Service.swift in Sources */,
+				979405AE1FB0DA6000811F37 /* DetailTableViewCell.swift in Sources */,
+				979405B11FB10E1500811F37 /* Extensions.swift in Sources */,
 				977C081E1FB09208003511F7 /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitHubAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = netomoura.GitHubAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,6 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GitHubAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = netomoura.GitHubAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";

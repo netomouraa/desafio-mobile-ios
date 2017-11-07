@@ -15,7 +15,10 @@ class Repositorie: Mappable{
     var full_name: String?
     var description: String?
     var owner: RepositorieOwner?
-    
+    var forks_count: Int?
+    var stargazers_count: Int?
+    var open_issues_count: Int?
+
     required init?(map: Map) {
         
     }
@@ -26,5 +29,9 @@ class Repositorie: Mappable{
         full_name <- map["full_name"]
         description <- map["description"]
         owner <- map["owner"]
+        forks_count <- map["forks_count"]
+        stargazers_count <- map["stargazers_count"]
+        open_issues_count <- map["open_issues_count"]
+
     }
 }

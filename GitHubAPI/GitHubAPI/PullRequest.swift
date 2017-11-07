@@ -13,6 +13,7 @@ class PullRequests: Mappable{
     var title: String?
     var body: String?
     var url: String?
+    var updated_at: String?
     var user: RepositorieOwner?
     
     required init?(map: Map) {
@@ -23,6 +24,7 @@ class PullRequests: Mappable{
         title <- map["title"]
         body <- map["body"]
         url <- map["html_url"]
+        updated_at <- map["updated_at"]
         user <- map["user"]
     }
 }

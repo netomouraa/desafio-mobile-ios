@@ -7,6 +7,7 @@ target 'GitHubAPI' do
 
   # Pods for GitHubAPI
   pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'AlamofireImage', '~> 3.3'
 
   target 'GitHubAPITests' do
     inherit! :search_paths

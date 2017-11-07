@@ -12,11 +12,11 @@ class MainTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-    @IBOutlet weak var labelForksStars: UILabel!
-    
+    @IBOutlet weak var labelForks: UILabel!
+    @IBOutlet weak var labelStars: UILabel!
+
     @IBOutlet weak var imageViewUser: UIImageView!
     @IBOutlet weak var labelNameUser: UILabel!
-    @IBOutlet weak var labelFullNameUser: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 class RepositorieOwner: Mappable{
+    var id: Int?
     var login: String?
     var avatarURL: String?
     
@@ -18,6 +19,7 @@ class RepositorieOwner: Mappable{
     }
     
     func mapping(map: Map) {
+        id <- map["id"]
         login <- map["login"]
         avatarURL <- map["avatar_url"]
     }
