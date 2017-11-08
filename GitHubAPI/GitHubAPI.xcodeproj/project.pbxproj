@@ -30,6 +30,7 @@
 		97A7B8801FB084B1000C6069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A7B87E1FB084B1000C6069 /* LaunchScreen.storyboard */; };
 		97A7B88B1FB084B1000C6069 /* GitHubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B88A1FB084B1000C6069 /* GitHubAPITests.swift */; };
 		97A7B8961FB084B1000C6069 /* GitHubAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A7B8951FB084B1000C6069 /* GitHubAPIUITests.swift */; };
+		97F96CB11FB2C55F00CCC5E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 97F96CB01FB2C55F00CCC5E1 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		97A7B8911FB084B1000C6069 /* GitHubAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A7B8951FB084B1000C6069 /* GitHubAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIUITests.swift; sourceTree = "<group>"; };
 		97A7B8971FB084B1000C6069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F96CB01FB2C55F00CCC5E1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = GitHubAPI/.gitignore; sourceTree = SOURCE_ROOT; };
 		BE05245AC09973154FEF1538 /* Pods_GitHubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94BC1F42476F2AE502C6EF5 /* Pods_GitHubAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3583384FD3DC775C8B6449B /* Pods_GitHubAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				97A7B8771FB084B1000C6069 /* MainViewController.swift */,
+				97F96CB01FB2C55F00CCC5E1 /* .gitignore */,
 				979405A61FB0D9F900811F37 /* DetailTableViewController.swift */,
 			);
 			path = Controllers;
@@ -372,6 +375,7 @@
 				979405AF1FB0DA6000811F37 /* DetailTableViewCell.xib in Resources */,
 				97A7B8801FB084B1000C6069 /* LaunchScreen.storyboard in Resources */,
 				97A7B87D1FB084B1000C6069 /* Assets.xcassets in Resources */,
+				97F96CB11FB2C55F00CCC5E1 /* .gitignore in Resources */,
 				97A7B87B1FB084B1000C6069 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
